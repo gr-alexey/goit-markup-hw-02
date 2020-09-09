@@ -1,0 +1,75 @@
+:root {
+  --white-color: #ffffff;
+  --primary-text-color: #757575;
+  --primary-text-title: #212121;
+  --botton-color: #188ce8;
+  --accent-color: #2196f3;
+  --bcg-header-color: #ececec;
+  --bcg-color-1: #2f303a;
+  --bcg-color-2: #e5e5e5;
+  --bcg-color-3: #f5f4fa;
+  --mail-color: rgba(255, 255, 255, 0.6);
+}
+body {
+  color: var(--primary-text-color);
+}
+.header {
+  background-color: var(--bcg-header-color);
+}
+.hero {
+  background-color: var(--bcg-color-1);
+}
+.hero-title {
+  color: var(--white-color);
+}
+.site-nav .link {
+  color: var(--primary-text-title);
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+.section-title {
+  color: var(--primary-text-title);
+}
+.feature-list .title {
+  color: var(--primary-text-title);
+}
+.advantages {
+  background-color: var(--bcg-color-2);
+}
+.footer {
+  background-color: var(--bcg-color-1);
+}
+.addres {
+  color: var(--white-color);
+}
+.team {
+  background-color: var(--bcg-color-3);
+}
+.staff {
+  color: var(--primary-text-title);
+}
+.project-title {
+  color: var(--primary-text-title);
+}
+.navigation > li {
+  color: var(--primary-text-title);
+}
+.addres-title {
+  color: var(--mail-color);
+}
+.addres-title:hover,
+.addres-title:focus {
+  color: var(--accent-color);
+}
+.header .addres-title {
+  color: var(--primary-text-color);
+}
+.header .addres-title:hover,
+.header .addres-title:focus {
+  color: var(--accent-color);
+}
+.main-portfolio {
+  background-color: var(--bcg-color-2);
+}
