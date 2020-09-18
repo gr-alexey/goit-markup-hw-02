@@ -2,7 +2,7 @@
   --white-color: #ffffff;
   --primary-text-color: #757575;
   --primary-text-title: #212121;
-  --botton-color: #188ce8;
+  --button-color: #188ce8;
   --accent-color: #2196f3;
   --bcg-header-color: #ececec;
   --bcg-color-1: #2f303a;
@@ -15,6 +15,28 @@ body {
   font-family: Roboto, sans-serif;
 }
 /* 1.1. Хедер */
+.logo {
+  font-family: Raleway, sans-serif;
+  text-decoration: none;
+}
+.logo-1 {
+  font-weight: 700;
+  color: #2196f3;
+  font-size: 26px;
+  line-height: 1.15;
+}
+.logo-2 {
+  font-weight: 700;
+  color: #000000;
+  font-size: 26px;
+  line-height: 1.15;
+}
+.logo-22 {
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 26px;
+  line-height: 1.15;
+}
 .header {
   background-color: var(--white-color);
   font-weight: 500;
@@ -28,16 +50,16 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  text-decoration: none;
 }
 .site-nav .link:hover,
-.site-nav .link:focus {
-  color: var(--accent-color);
-}
+.site-nav .link:focus,
 .site-nav .link.current {
   color: var(--accent-color);
 }
 .auth-nav {
   color: var(--primary-text-color);
+  text-decoration: none;
 }
 .auth-nav:hover,
 .auth-nav:focus {
@@ -53,9 +75,11 @@ body {
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
+  text-align: center;
+  text-decoration: none;
 }
-span {
-  font-weight: bold;
+.hero-button {
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.06em;
@@ -69,21 +93,21 @@ span {
 }
 .feature-list .title {
   color: var(--primary-text-title);
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 .feature-list .desc {
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
 /* 1.4. Секция портфолио */
 .about-us {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   letter-spacing: 0.03em;
@@ -94,7 +118,7 @@ span {
   background-color: var(--bcg-color-3);
 }
 .our-team {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   letter-spacing: 0.03em;
@@ -107,7 +131,7 @@ span {
   letter-spacing: 0.03em;
 }
 .job-title {
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
@@ -121,8 +145,7 @@ span {
 }
 .addres {
   color: var(--white-color);
-  font-family: Roboto;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -130,10 +153,11 @@ span {
 }
 .addres-title {
   color: var(--mail-color);
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  text-decoration: none;
 }
 .addres-title:hover,
 .addres-title:focus {
@@ -145,29 +169,30 @@ span {
 /* 2.2. Портфолио проектов */
 .project-title {
   color: var(--primary-text-title);
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
 .project-desc {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
 }
 /* button */
 .button {
-  color: var(--white-color);
-  background-color: var(--accent-color);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.63;
-  letter-spacing: 0.03em;
-}
-.button.primary {
-  color: var(--primary-text-title);
   background-color: var(--bcg-color-3);
+  color: var(--primary-text-title);
+  text-decoration: none;
+}
+
+.button.primary {
+  background-color: var(--button-color);
+  color: var(--white-color);
+}
+.button:hover,
+.button:focus {
+  background-color: var(--button-color);
+  color: var(--white-color);
 }
